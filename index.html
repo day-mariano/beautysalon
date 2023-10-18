@@ -8,27 +8,26 @@
   <title>Beauty Salon</title>
 </head>
 <body>
-  <header>
+  <header id="inicio">
     <div class="logo">
       <img src="imagens/rosa.png">
       <h1>Beauty Salon</h1>
     </div>
     <nav>
-      <a href="">Home</a>
       <a href="#inicio" >Início</a>
-      <a href="#serviços">Serviços</a>
+      <a href="#servicos">Serviços</a>
       <a href="#horarios">Horários</a>
       <a href="#agendamento">Agendamento</a>
     </nav>
   </header>
   <section class="hero">
-    <div>
-      <h2>Nós somos experientes em deixar você ainda mais bela</h2>
-      <p>Nosso salão conta com cabeleireira, manicure, maquiadora e massagista e muito mais </p>
+    <div class="divHero">
+      <h2>Nós somos experientes em deixar nossas clientes ainda mais belas ✨</h2>
+      <p>Nosso salão conta com cabeleireira, manicure, maquiadora e esteticista </p>
     </div>
     <img src="imagens/cabeleleilaleia.jpeg" id="fotoHero" >
   </section>
-  <h2>Serviços</h2>
+  <h2 id="servicos">Serviços</h2>
   <ul>
     <li>
       <img src="imagens/escova.jpg" />
@@ -79,7 +78,8 @@
       </div>
     </li>
   </ul>
-  <div class="tabelawrapper">
+  <div id="horarios">
+    <h2>Horário de funcionamento</h2>
     <table>
       <tr>
         <th>hora/dia</th>
@@ -115,5 +115,39 @@
       </tr>
     </table>
   </div>
+    <h2 id="agendamento">Agendamento</h2>
+    <form action="">
+      <label for="name">Qual seu nome?
+        <input type="text" id="name" name="name" placeholder="Seu nome">
+      </label>
+      <label for="servico">Qual serviço deseja agendar?
+        <input type="text" id="servico" name="servico" placeholder="Serviços">
+      </label>
+      Qual o tamanho do seu cabelo?
+      <div class="tamanho">
+        <label for="curto" class="labelRadio">
+          <input type="radio" id="curto" name="tamanho" class="inputRadio" value="curto">
+          Curto
+        </label>
+        <label for="medio" class="labelRadio">
+          <input type="radio" id="medio" name="tamaho" class="inputRadio" value="medio">
+          Médio
+        </label>
+        <label for="longo" class="labelRadio">
+          <input type="radio" id="longo" name="tamaho" class="inputRadio" value="longo">
+          Longo
+        </label>
+      </div>
+      <label for="birth">Horário </label>
+      <input type="datetime-local" id="horario" name="horario">
+      <Label for="color">Qual a sua cor de cabelo?
+        <input type="color" id="color" name="color">
+      </Label>
+      <label for="tipoPele" id="tipoPele">Qual o seu tipo de pele de seca a oleosa?
+        <input type="range" id="tipoPele" name="docile" min="0" max="10">
+      </label>
+      <input type="submit" value="Agendar" id="buttonAgendar">
+    </form>
+  <footer>Created by Dayana Mariano 2023</footer>
 </body>
 </html>
