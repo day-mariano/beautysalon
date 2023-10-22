@@ -235,10 +235,38 @@ input[type="range" i] {
 }
 
 footer {
+  background: #511822;
+  width: 100%;
+  padding-top: 2rem;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 16px;
-  color: #895652;
+  color: white;
 }
+
+.divFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  margin-bottom: 1rem;
+}
+
+footer h1, footer a {
+  color: white;
+}
+ footer .logo {
+  margin-right: 4rem;
+ }
+
+ footer p {
+  color: #bda0a4;
+  width: 100%;
+  background: #3d1019;
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+ }
